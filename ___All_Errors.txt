@@ -1,0 +1,8 @@
+CorrelationId: 10e56e47-a8da-428d-98e3-57473b3436ab
+UTC DateTime: 10/31/2025 11:16:01
+
+The following files/folders have not been downloaded
+0. assets/images/background_welcome.png
+1. assets/images/fundo_login.png
+2. assets/images/icone_usuario.svg
+3. assets/images/logo.png

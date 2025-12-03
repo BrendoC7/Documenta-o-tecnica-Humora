@@ -1,0 +1,50 @@
+name: humora
+description: "App de bem-estar emocional - Humora"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '^3.9.2'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+
+  # Foto de perfil (câmera / galeria)
+  image_picker: ^1.0.7
+
+  # Calendário da tela de Histórico
+  table_calendar: ^3.0.9
+
+  # Ícones estilo iOS
+  cupertino_icons: ^1.0.8
+
+  # Suporte a imagens SVG
+  flutter_svg: ^2.0.10
+  http: ^1.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/nuvem_humora.png
+    - assets/images/nuvem_welcome.png
+    - assets/images/nuvem_amor.png
+    - assets/icons/sun.png
+    - assets/icons/moon.png
+    - assets/images/chatbot_icon.png
+    - assets/images/nuvem_chat.png
+    - assets/images/balao_fala.png
+    - assets/images/especificacoes_nuvem.png
+    - assets/images/apresent_nuvem.png
