@@ -6,7 +6,7 @@ from routes import initialize_routes
 app = Flask(__name__)
 CORS(app)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root@localhost:3306/humora'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:minhasenha123@localhost:3306/humora'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'sua_chave_secreta_aqui'
 
@@ -18,4 +18,4 @@ with app.app_context():
     db.create_all()
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
