@@ -10,11 +10,15 @@ class Usuario(db.Model):
     nome = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(100), unique=True, nullable=False)
     senha = db.Column(db.String(200), nullable=False)
+    data_nascimento = db.Column(db.Date, nullable=True)
+    hobby = db.Column(db.Text, nullable=True)
 
-    def __init__(self, nome, email, senha):
+    def __init__(self, nome, email, senha, data_nascimento=None, hobby=None):
         self.nome = nome
         self.email = email
         self.senha = senha
+        self.data_nascimento = data_nascimento
+        self.hobby = hobby
 
 
 class Conversa(db.Model):
